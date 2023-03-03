@@ -1,0 +1,166 @@
+Qflow route logfile created on Monday 27 February 2023 04:00:53 PM IST
+qrouter -noc  -s dec_to_hex.cfg
+Qrouter detail maze router version 1.4.59.T
+Reading LEF data from file /usr/local/share/qflow/tech/osu035/osu035_stdcells.lef.
+LEF Read, Line 135: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 136: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 140: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 141: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 151: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 152: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 156: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 157: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 167: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 168: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 172: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 173: NOTE:  Old format VIARULE ignored.
+LEF file:  Defines site corner (ignored)
+LEF file:  Defines site IO (ignored)
+LEF file:  Defines site core (ignored)
+LEF read: Processed 3179 lines.
+LEF Read: encountered 0 errors and 12 warnings total.
+Vertical route layer at non-minimum pitch 3.2.  Using smaller pitch 1.6, will route on 1-of-2 tracks for layer metal4.
+Reading DEF data from file dec_to_hex.def.
+Diagnostic: Design name: "dec_to_hex"
+  Processed 3 vias total.
+  Processed 14 subcell instances total.
+  Processed 18 pins total.
+  Processed 16 nets total (0 fixed).
+  Processed 2 special nets total (4 fixed).
+DEF read: Processed 175 lines.
+Output scale = microns / 100, precision 1
+No antenna cell defined!
+There are 18 nets in this design.
+*** Running stage1 routing with defaults
+Finished routing net decimal[0]
+Nets remaining: 17
+Finished routing net hex[0]
+Nets remaining: 16
+Finished routing net decimal[1]
+Nets remaining: 15
+Finished routing net hex[1]
+Nets remaining: 14
+Finished routing net decimal[2]
+Nets remaining: 13
+Finished routing net hex[2]
+Nets remaining: 12
+Finished routing net decimal[3]
+Nets remaining: 11
+Finished routing net hex[3]
+Nets remaining: 10
+Finished routing net decimal[4]
+Nets remaining: 9
+Finished routing net hex[4]
+Nets remaining: 8
+Finished routing net decimal[5]
+Nets remaining: 7
+Failed to route net hex[5]
+Finished routing net decimal[6]
+Nets remaining: 6
+Finished routing net hex[6]
+Nets remaining: 5
+Finished routing net decimal[7]
+Nets remaining: 4
+Finished routing net hex[7]
+Nets remaining: 3
+
+----------------------------------------------
+Progress: Stage 1 total routes completed: 15
+Failed net routes: 1
+----------------------------------------------
+*** Running stage2 routing with options mask 10, effort 10
+Nets remaining: 1
+Best route of hex[5] collides with net: decimal[1] 
+Ripping up blocking net decimal[1]
+Nets remaining: 1
+
+----------------------------------------------
+Progress: Stage 2 total routes completed: 17
+No failed routes!
+----------------------------------------------
+*** Running stage3 routing with defaults, 1st round
+Finished routing net decimal[0]
+Nets remaining: 17
+Finished routing net hex[0]
+Nets remaining: 16
+Finished routing net decimal[1]
+Nets remaining: 15
+Finished routing net hex[1]
+Nets remaining: 14
+Keeping route for net decimal[2]
+Finished routing net hex[2]
+Nets remaining: 12
+Finished routing net decimal[3]
+Nets remaining: 11
+Keeping route for net hex[3]
+Finished routing net decimal[4]
+Nets remaining: 9
+Finished routing net hex[4]
+Nets remaining: 8
+Finished routing net decimal[5]
+Nets remaining: 7
+Finished routing net hex[5]
+Nets remaining: 6
+Finished routing net decimal[6]
+Nets remaining: 5
+Finished routing net hex[6]
+Nets remaining: 4
+Finished routing net decimal[7]
+Nets remaining: 3
+Finished routing net hex[7]
+Nets remaining: 2
+
+----------------------------------------------
+Progress: Stage 3 total routes completed: 31
+No failed routes!
+----------------------------------------------
+*** Running stage3 routing with defaults, 2nd round
+Finished routing net decimal[0]
+Nets remaining: 17
+Finished routing net hex[0]
+Nets remaining: 16
+Finished routing net decimal[1]
+Nets remaining: 15
+Finished routing net hex[1]
+Nets remaining: 14
+Keeping route for net decimal[2]
+Finished routing net hex[2]
+Nets remaining: 12
+Finished routing net decimal[3]
+Nets remaining: 11
+Keeping route for net hex[3]
+Finished routing net decimal[4]
+Nets remaining: 9
+Finished routing net hex[4]
+Nets remaining: 8
+Finished routing net decimal[5]
+Nets remaining: 7
+Finished routing net hex[5]
+Nets remaining: 6
+Finished routing net decimal[6]
+Nets remaining: 5
+Finished routing net hex[6]
+Nets remaining: 4
+Finished routing net decimal[7]
+Nets remaining: 3
+Finished routing net hex[7]
+Nets remaining: 2
+
+----------------------------------------------
+Progress: Stage 3 total routes completed: 45
+No failed routes!
+----------------------------------------------
+*** Writing DEF file dec_to_hex_route.def
+emit_routes():  DEF file has 16 nets and 4 specialnets.
+but qrouter wants to write 18 nets and specialnets.
+----------------------------------------------
+Final: No failed routes!
+----------------------------------------------
+*** Writing RC file dec_to_hex_route.rc
+Running annotate.tcl antenna.out /home/ubuntu/Desktop/BintoHex/synthesis/dec_to_hex.rtlnopwr.v
+  /home/ubuntu/Desktop/BintoHex/synthesis/dec_to_hex.spc /home/ubuntu/Desktop/BintoHex/synthesis/dec_to_hex.rtlnopwr.anno.v
+  /home/ubuntu/Desktop/BintoHex/synthesis/dec_to_hex.anno.spc  /usr/local/share/qflow/tech/osu035/osu035_stdcells.sp /home/ubuntu/Desktop/BintoHex/synthesis/dec_to_hex_powerground
+Running annotate.tcl
+found cell FILL pinlist vdd gnd
+Done with annotate.tcl
+Router script ended on Monday 27 February 2023 04:00:53 PM IST

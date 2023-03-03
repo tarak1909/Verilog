@@ -1,0 +1,22 @@
+
+Qflow static timing analysis logfile appended on Monday 27 February 2023 03:53:10 PM IST
+Converting qrouter output to vesta delay format
+Running rc2dly -r dec_to_bin.rc -l /usr/local/share/qflow/tech/osu035/osu035_stdcells.lib -d dec_to_bin.dly
+Converting qrouter output to SPEF delay format
+Running rc2dly -D : -r dec_to_bin.rc -l /usr/local/share/qflow/tech/osu035/osu035_stdcells.lib -d dec_to_bin.spef
+Converting qrouter output to SDF delay format
+Running rc2dly -r dec_to_bin.rc -l /usr/local/share/qflow/tech/osu035/osu035_stdcells.lib -d dec_to_bin.sdf
+Running vesta static timing analysis with back-annotated extracted wire delays
+vesta -c -d dec_to_bin.dly --long dec_to_bin.rtlnopwr.v /usr/local/share/qflow/tech/osu035/osu035_stdcells.lib
+----------------------------------------------
+Vesta static timing analysis tool
+for qflow 1.3.17
+(c) 2013-2018 Tim Edwards, Open Circuit Design
+----------------------------------------------
+
+Parsing library "osu035_stdcells"
+End of library at line 6636
+Parsing module "dec_to_bin"
+Lib read /usr/local/share/qflow/tech/osu035/osu035_stdcells.lib:  Processed 6637 lines.
+Verilog netlist read:  Processed 24 lines.
+Number of paths analyzed:  0

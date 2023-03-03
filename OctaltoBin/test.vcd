@@ -1,0 +1,25 @@
+$date
+	Thu Mar  2 14:55:12 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb $end
+$var wire 9 ! binary [8:0] $end
+$var reg 1 " octal $end
+$scope module dut $end
+$var wire 1 " octal $end
+$var reg 9 # binary [8:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1 #
+1"
+b1 !
+$end
+#30

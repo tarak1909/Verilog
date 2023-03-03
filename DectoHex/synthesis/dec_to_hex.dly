@@ -1,0 +1,64 @@
+decimal[0]
+PIN/decimal[0] 0.000299
+BUFX2_1/A 0.057230
+
+hex[0]
+BUFX2_1/Y 0.000136
+PIN/hex[0] 0.000420
+
+decimal[1]
+PIN/decimal[1] 0.000339
+BUFX2_2/A 0.068034
+
+hex[1]
+BUFX2_2/Y 0.000081
+PIN/hex[1] 0.000210
+
+decimal[2]
+PIN/decimal[2] 0.000175
+BUFX2_3/A 0.040861
+
+hex[2]
+BUFX2_3/Y 0.000108
+PIN/hex[2] 0.000291
+
+decimal[3]
+PIN/decimal[3] 0.000183
+BUFX2_4/A 0.046596
+
+hex[3]
+BUFX2_4/Y 0.000114
+PIN/hex[3] 0.000264
+
+decimal[4]
+PIN/decimal[4] 0.000182
+BUFX2_5/A 0.047860
+
+hex[4]
+BUFX2_5/Y 0.000020
+PIN/hex[4] 0.000031
+
+decimal[5]
+PIN/decimal[5] 0.000183
+BUFX2_6/A 0.046596
+
+hex[5]
+BUFX2_6/Y 0.000134
+PIN/hex[5] 0.000385
+
+decimal[6]
+PIN/decimal[6] 0.000190
+BUFX2_7/A 0.049159
+
+hex[6]
+BUFX2_7/Y 0.000081
+PIN/hex[6] 0.000210
+
+decimal[7]
+PIN/decimal[7] 0.000223
+BUFX2_8/A 0.070917
+
+hex[7]
+BUFX2_8/Y 0.000192
+PIN/hex[7] 0.000749
+

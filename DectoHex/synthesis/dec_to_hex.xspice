@@ -1,0 +1,45 @@
+* XSpice netlist created from SPICE and liberty sources by spi2xspice.py
+*SPICE netlist created from BLIF module dec_to_hex by blif2BSpice
+.subckt dec_to_hex a_vdd a_gnd a_decimal_0_ a_decimal_1_ a_decimal_2_ a_decimal_3_ a_decimal_4_ a_decimal_5_ a_decimal_6_ a_decimal_7_ a_hex_0_ a_hex_1_ a_hex_2_ a_hex_3_ a_hex_4_ a_hex_5_ a_hex_6_ a_hex_7_
+ABUFX2_1 [decimal_0_] hex_0_ d_lut_BUFX2
+ABUFX2_2 [decimal_1_] hex_1_ d_lut_BUFX2
+ABUFX2_3 [decimal_2_] hex_2_ d_lut_BUFX2
+ABUFX2_4 [decimal_3_] hex_3_ d_lut_BUFX2
+ABUFX2_5 [decimal_4_] hex_4_ d_lut_BUFX2
+ABUFX2_6 [decimal_5_] hex_5_ d_lut_BUFX2
+ABUFX2_7 [decimal_6_] hex_6_ d_lut_BUFX2
+ABUFX2_8 [decimal_7_] hex_7_ d_lut_BUFX2
+
+.model todig_3v3 adc_bridge(in_high=2.1999999999999997 in_low=1.0999999999999999 rise_delay=10n fall_delay=10n)
+.model toana_3v3 dac_bridge(out_high=3.3 out_low=0)
+
+.model ddflop d_dff(ic=0 rise_delay=1n fall_delay=1n)
+.model dzero d_pulldown(load=1p)
+.model done d_pullup(load=1p)
+
+AA2D1 [a_vdd] [vdd] todig_3v3
+AA2D2 [a_gnd] [gnd] todig_3v3
+AA2D3 [a_decimal_0_] [decimal_0_] todig_3v3
+AA2D4 [a_decimal_1_] [decimal_1_] todig_3v3
+AA2D5 [a_decimal_2_] [decimal_2_] todig_3v3
+AA2D6 [a_decimal_3_] [decimal_3_] todig_3v3
+AA2D7 [a_decimal_4_] [decimal_4_] todig_3v3
+AA2D8 [a_decimal_5_] [decimal_5_] todig_3v3
+AA2D9 [a_decimal_6_] [decimal_6_] todig_3v3
+AA2D10 [a_decimal_7_] [decimal_7_] todig_3v3
+AD2A1 [hex_0_] [a_hex_0_] toana_3v3
+AD2A2 [hex_1_] [a_hex_1_] toana_3v3
+AD2A3 [hex_2_] [a_hex_2_] toana_3v3
+AD2A4 [hex_3_] [a_hex_3_] toana_3v3
+AD2A5 [hex_4_] [a_hex_4_] toana_3v3
+AD2A6 [hex_5_] [a_hex_5_] toana_3v3
+AD2A7 [hex_6_] [a_hex_6_] toana_3v3
+AD2A8 [hex_7_] [a_hex_7_] toana_3v3
+
+.ends dec_to_hex
+ 
+
+* BUFX2 A
+.model d_lut_BUFX2 d_lut (rise_delay=1n fall_delay=1n input_load=1p
++ table_values "01")
+.end

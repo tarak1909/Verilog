@@ -1,0 +1,96 @@
+Qflow migration logfile created on Monday 27 February 2023 02:55:53 PM IST
+magic -dnull -noconsole  migrate_dec_to_bin.tcl
+
+Magic 8.3 revision 50 - Compiled on Saturday 20 August 2022 10:38:37 PM IST.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Input style lambda=0.10(p): scaleFactor=10, multiplier=1
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Loading "migrate_dec_to_bin.tcl" from command line.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )
+
+microns:    0.00 x 0.00    (  0.00,  0.00 ), (  0.00,  0.00 )
+lambda:        0 x 0       (     0,  0    ), (     0,  0    )
+Reading LEF data from file /usr/local/share/qflow/tech/osu035/osu035_stdcells.lef.
+This action cannot be undone.
+LEF read, Line 16 (Message): Unknown keyword "OBS" in LEF file; ignoring.
+LEF read, Line 17 (Message): Unknown keyword "PIN" in LEF file; ignoring.
+LEF read, Line 107 (Warning): Cut size for magic type "metal1" (4 x 4) does not match LEF/DEF
+LEF read, Line 107 (Warning): Via cut size (8 x 8).  Magic layer cut size will be used!
+LEF read, Line 116 (Warning): Cut size for magic type "metal2" (4 x 4) does not match LEF/DEF
+LEF read, Line 116 (Warning): Via cut size (8 x 8).  Magic layer cut size will be used!
+LEF read, Line 125 (Warning): Cut size for magic type "metal3" (4 x 4) does not match LEF/DEF
+LEF read, Line 125 (Warning): Via cut size (8 x 8).  Magic layer cut size will be used!
+LEF read, Line 143 (Warning): Cut size for magic type "(null)" (4 x 4) does not match LEF/DEF
+LEF read, Line 143 (Warning): Via cut size (8 x 8).  Magic layer cut size will be used!
+LEF read, Line 159 (Warning): Cut size for magic type "(null)" (4 x 4) does not match LEF/DEF
+LEF read, Line 159 (Warning): Via cut size (8 x 8).  Magic layer cut size will be used!
+LEF read, Line 175 (Warning): Cut size for magic type "(null)" (4 x 4) does not match LEF/DEF
+LEF read, Line 175 (Warning): Via cut size (8 x 8).  Magic layer cut size will be used!
+LEF read: Processed 3179 lines.
+LEF Read: encountered 12 warnings total.
+Reading DEF data from file dec_to_bin.def.
+This action cannot be undone.
+LEF read, Line 20 (Warning): Cut size for magic type "metal1" (4 x 4) does not match LEF/DEF
+LEF read, Line 20 (Warning): Via cut size (8 x 8).  Magic layer cut size will be used!
+LEF read, Line 21 (Warning): Cut size for magic type "m2contact" (4 x 4) does not match LEF/DEF
+LEF read, Line 21 (Warning): Via cut size (8 x 8).  Magic layer cut size will be used!
+LEF read, Line 22 (Warning): Cut size for magic type "m2contact" (4 x 4) does not match LEF/DEF
+LEF read, Line 22 (Warning): Via cut size (8 x 8).  Magic layer cut size will be used!
+LEF read, Line 26 (Warning): Cut size for magic type "metal3" (4 x 4) does not match LEF/DEF
+LEF read, Line 26 (Warning): Via cut size (8 x 8).  Magic layer cut size will be used!
+LEF read, Line 27 (Warning): Cut size for magic type "m3contact" (4 x 4) does not match LEF/DEF
+LEF read, Line 27 (Warning): Via cut size (8 x 8).  Magic layer cut size will be used!
+LEF read, Line 28 (Warning): Cut size for magic type "m3contact" (4 x 4) does not match LEF/DEF
+LEF read, Line 28 (Warning): Via cut size (8 x 8).  Magic layer cut size will be used!
+LEF read, Line 32 (Warning): Cut size for magic type "metal3" (4 x 4) does not match LEF/DEF
+LEF read, Line 32 (Warning): Via cut size (8 x 8).  Magic layer cut size will be used!
+LEF read, Line 33 (Warning): Cut size for magic type "m4contact" (4 x 4) does not match LEF/DEF
+LEF read, Line 33 (Warning): Via cut size (8 x 8).  Magic layer cut size will be used!
+LEF read, Line 34 (Warning): Cut size for magic type "m4contact" (4 x 4) does not match LEF/DEF
+LEF read, Line 34 (Warning): Via cut size (8 x 8).  Magic layer cut size will be used!
+  Processed 3 vias total.
+  Processed 14 subcell instances total.
+  Processed 18 pins total.
+  Processed 16 nets total.
+  Processed 2 special nets total.
+DEF read: Processed 220 lines.
+DEF Read: encountered 18 warnings total.
+Generating LEF output dec_to_bin.lef for cell dec_to_bin:
+Diagnostic:  Write LEF header for cell dec_to_bin
+Diagnostic:  Writing LEF output for cell dec_to_bin
+Diagnostic:  Scale value is 0.100000
+Extracting FILL into FILL.ext:
+Completed 67%
+Completed 100%
+Extracting BUFX2 into BUFX2.ext:
+Completed 67%
+Completed 100%
+Extracting dec_to_bin into dec_to_bin.ext:
+Completed 11%
+Completed 17%
+Completed 22%
+Completed 28%
+Completed 33%
+Completed 39%
+Completed 44%
+Completed 50%
+Completed 56%
+Completed 61%
+Completed 67%
+Completed 72%
+Completed 78%
+Completed 83%
+Completed 89%
+Completed 94%
+Completed 100%
+exttospice finished.
+Migration script ended on Monday 27 February 2023 02:55:54 PM IST

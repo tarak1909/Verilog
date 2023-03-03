@@ -1,0 +1,26 @@
+Qflow DRC logfile created on Monday 27 February 2023 03:53:11 PM IST
+magic -dnull -noconsole  /home/ubuntu/Desktop/BintoOct/layout/run_drc_dec_to_bin.tcl
+
+Magic 8.3 revision 50 - Compiled on Saturday 20 August 2022 10:38:37 PM IST.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Input style lambda=0.20(p): scaleFactor=20, multiplier=1
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+4 Magic internal units = 1 Lambda
+Loading "/home/ubuntu/Desktop/BintoOct/layout/run_drc_dec_to_bin.tcl" from command line.
+Reading LEF data from file /usr/local/share/qflow/tech/osu035/osu035_stdcells.lef.
+This action cannot be undone.
+LEF read, Line 16 (Message): Unknown keyword "OBS" in LEF file; ignoring.
+LEF read, Line 17 (Message): Unknown keyword "PIN" in LEF file; ignoring.
+LEF read: Processed 3179 lines.
+Scaled magic input cell dec_to_bin geometry by factor of 2
+Processing timestamp mismatches: BUFX2, FILL.
+drc = 0
+DRC checking script ended on Monday 27 February 2023 03:53:11 PM IST
